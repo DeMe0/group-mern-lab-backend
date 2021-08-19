@@ -1,11 +1,18 @@
+///////////////////////////
+// Environmental Variables
+///////////////////////////
 require("dotenv").config()
-const express = require('express')
+const {PORT=6280} = process.env
+
+//MONGO CONNECTION
 const mongoose = require('./db/connection')
 const morgan = require('morgan')
 const cors = require('cors')
 const { response } = require("express")
-const app = express()
-const {PORT=6280} = process.env
+
+//Bringing in Express
+const express = require("express");
+const app = express();
 
 app.get("/", (req, res) => res.send("hello world"))
 
