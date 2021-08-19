@@ -31,7 +31,7 @@ app.use(morgan("tiny")); //logging
 
 //Route for testing server is working
 app.get("/", (req, res) => {
-  res.json({ hello: "Hello World!" });
+  res.json({ msg: "Server is working!" });
 });
 
 // Dog Routes send to dog router
