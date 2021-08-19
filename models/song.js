@@ -4,7 +4,7 @@ const { Schema, model } = require("mongoose");
 const songSchema = new Schema(
   {
     title: String,
-    artist: Number,
+    artist: String,
     time: String,
   },
   { timestamps: true }
